@@ -1,6 +1,3 @@
-cd username.github.io
-
-echo "Hello World" > index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,11 +16,12 @@ echo "Hello World" > index.html
     <div id="header">
       <div class="container">
         <nav>
-          <img class="logo" src="images/logo.JPG" alt="" />
+          <h1 class="logo">S</h1>
+          <i class="fa-sharp fa-solid fa-sun-bright"></i>
           <ul id="sidemenu">
             <li><a href="#header">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#services">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -31,11 +29,12 @@ echo "Hello World" > index.html
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>JAVA DEVELOPER</p>
           <h1>
-            Hi, i am <span>Sandeep</span> <br />
-            from India
+            Hi, I am <br />
+            <span>Sandeep Rawat</span>
+            <br />
           </h1>
+          <p>JAVA DEVELOPER</p>
         </div>
       </div>
     </div>
@@ -45,7 +44,10 @@ echo "Hello World" > index.html
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/logo.JPG" alt="" />
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQEYoGluh6rxAA/profile-displayphoto-shrink_400_400/0/1653030300120?e=1668643200&v=beta&t=7AVu3RnBNdwjkThKxEasMimr8doUZZjtUUxhBAHeR1k"
+              alt=""
+            />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -57,12 +59,10 @@ echo "Hello World" > index.html
             </p>
             <div class="tab-titels">
               <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Education</p>
+              <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -104,7 +104,7 @@ echo "Hello World" > index.html
                 </li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+            <!-- <div class="tab-contents" id="education">
               <ul>
                 <li>
                   <span>JAVA3</span> <br />
@@ -123,15 +123,15 @@ echo "Hello World" > index.html
                   DEVELOPER
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Services -->
+    <!-- Services
     <div id="services">
-      <div id="container">
+      <div class="container">
         <h1 class="sub-title">My services</h1>
         <div class="services-list">
           <div>
@@ -164,8 +164,44 @@ echo "Hello World" > index.html
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
+    <!-- Skills -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">SKILLS</h1>
+        <div class="services-list">
+          <div>
+            <img src="/images/svg/html.svg" alt="" />
+            <h2>HTML</h2>
+          </div>
+          <div>
+            <img src="/images/svg/css.svg" alt="" />
+            <h2>CSS</h2>
+          </div>
+          <div>
+            <img src="/images/svg/css.svg" alt="" />
+            <h2>JAVASCRIPT</h2>
+          </div>
+          <div>
+            <img src="/images/svg/css.svg" alt="" />
+            <h2>JAVA</h2>
+          </div>
+          <div>
+            <img src="/images/svg/css.svg" alt="" />
+            <h2>HYBERNATE</h2>
+          </div>
+          <div>
+            <img src="/images/svg/css.svg" alt="" />
+            <h2>MYSQL</h2>
+          </div>
+          <div>
+            <img src="/images/svg/css.svg" alt="" />
+            <h2>GITHUB</h2>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Portfolio -->
     <div id="portfolio">
       <div class="container">
@@ -207,7 +243,7 @@ echo "Hello World" > index.html
         </div>
       </div>
     </div>
-    <a href="#" class="btn">See More</a>
+    <!-- <a href="#" class="btn">See More</a> -->
 
     <!-- contact us -->
     <div id="contact">
@@ -215,16 +251,17 @@ echo "Hello World" > index.html
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>contaxt@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>012345678</p>
+            <p><i class="fas fa-paper-plane"></i>Sandeeprawat313@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 7703986817</p>
             <div class="social-icons">
-              <a href="############"><i class="fa-brands fa-facebook"></i></a>
-              <a href="############"><i class="fa-brands fa-instagram"></i></a>
-              <a href="############"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="############"
-                ><i class="fa-brands fa-twitter-square"></i
+              <a href="https://github.com/Sandeeprawat313"
+                ><i class="fa-brands fa-github"></i
               ></a>
+              <a href="https://www.linkedin.com/in/sandeep-rawat-50a612159/"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
             </div>
+
             <a
               href="https://drive.google.com/file/d/1sp8YwPiC-EshbYEpwSpz0ROgp_xbCbGY/view?usp=sharing"
               download
@@ -253,7 +290,7 @@ echo "Hello World" > index.html
         </div>
       </div>
       <div class="copyright">
-        <p>copyright@ Sandeep ............</p>
+        <!-- <p>copyright@ Sandeep ............</p> -->
       </div>
     </div>
   </body>
