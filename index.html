@@ -1,4 +1,3 @@
-cd username.github.io echo "Hello World" > index.htmlgit
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,13 +17,15 @@ cd username.github.io echo "Hello World" > index.htmlgit
       <div class="container">
         <nav>
           <img class="logo" src="images/logo.JPG" alt="" />
-          <ul>
-            <li><a href="">HOME-2</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">HOME-2</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>JAVA DEVELOPER</p>
@@ -203,7 +204,57 @@ cd username.github.io echo "Hello World" > index.htmlgit
         </div>
       </div>
     </div>
+    <a href="#" class="btn">See More</a>
+
+    <!-- contact us -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>contaxt@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>012345678</p>
+            <div class="social-icons">
+              <a href="############"><i class="fa-brands fa-facebook"></i></a>
+              <a href="############"><i class="fa-brands fa-instagram"></i></a>
+              <a href="############"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="############"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1sp8YwPiC-EshbYEpwSpz0ROgp_xbCbGY/view?usp=sharing"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright@ Sandeep ............</p>
+      </div>
+    </div>
   </body>
+
   <script>
     let tablinks = document.getElementsByClassName("tab-links");
     let tabcontents = document.getElementsByClassName("tab-contents");
@@ -218,5 +269,33 @@ cd username.github.io echo "Hello World" > index.htmlgit
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabnames).classList.add("active-tab");
     }
+
+    let sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.left = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxetOTR4e0JmyhYzYL_Gbs2k7xzlw92hwvUqzKDZWwAP87ANj4kSzaxTHy1uyOQ6Albug/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg"); //
+
+    // for form from gethub
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
   </script>
 </html>
