@@ -198,7 +198,7 @@ nav ul li a:hover::after{
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(52%,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
     grid-gap: 40px;
     margin-top: 50px;
     
@@ -239,23 +239,15 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
-    
+    text-align: justify;
+    margin-top: 10px;
 }
-.layer a{
-    /* border: 10px solid white; */
-    margin-top: 20px;
-    color: grey;
-    text-decoration: none;
-    font-size: 40px;
-    line-height: 60px;
-    background: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
+
+
 .work:hover img{
     transform: scale(1.1);
 }
+
 
 /* work pe hower to .layer ki height in */
 /* and give transition to layer */
@@ -275,6 +267,29 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background: #ff004f;
+}
+
+#teck-stack{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+#project-link{
+    display: flex;
+    gap: 20px;
+    background-color: #ff00510c
+    
+}
+#project-link a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+#project-link a:hover{
+    text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;  
+  color: #262626;
 }
 
 /* contact */
@@ -348,8 +363,35 @@ nav .fa-solid{
     display: none;
 }
 
+/* Statistical section */
+#Sta-sections{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    height: 25vh;
+    margin-bottom: 50px;
+}
+#Sta-sections div{
+    border: 1px solid red;
+    text-align: center;
+
+}
+#Sta-sections div h3{
+    border: 10px solid blue;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 50%;
+    padding: 18% 5%;
+    font-size: 3vh;
+}
+
+
 @media only screen and (max-width:600px){
-   
+    .layer h3{
+        text-align: left;
+        margin-bottom: 8px;
+     
+    }
     .header-text{
         text-align: center;
     }
