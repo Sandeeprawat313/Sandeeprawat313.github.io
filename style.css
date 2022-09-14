@@ -140,6 +140,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+.about-col-2 p{
+    text-align: justify;
+    margin-top: 10px;
+}
 
 /* services */
 #services{
@@ -147,7 +151,7 @@ nav ul li a:hover::after{
 }
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
     
@@ -169,7 +173,7 @@ nav ul li a:hover::after{
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .services-list div a{
     text-decoration: none;
@@ -366,7 +370,8 @@ nav .fa-solid{
 /* Statistical section */
 #Sta-sections{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 20px;
     height: 25vh;
     margin-bottom: 50px;
 }
@@ -385,8 +390,83 @@ nav .fa-solid{
     font-size: 3vh;
 }
 
+/* NEW PORTFOLIO */
+#project_section{
+   
+}
 
+.project_box{
+   
+    margin-bottom: 100px;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(49%,1fr)); */
+    gap: 10px;
+
+}
+.content_pro{
+    padding: 2% 10px;
+    width: 80%;
+}
+.content_pro h1{
+    margin-bottom: 1vw;
+    text-decoration: underline;
+}
+.content_pro p{
+    margin-bottom: 1vw;
+    text-align: justify;
+    width: 100%;
+}
+
+.image_pro{
+    width: 130%; 
+}
+.image_pro img{
+    width: 100%;
+    transition: background 0.5s,transform 0.5s;
+}
+.image_pro img:hover{
+    border-radius: 10px;
+    border: 1px solid #ff004f;
+    transform: translateY(14px);
+}
+.links-project{
+    display: flex;
+    gap: 20px;
+}
+
+.content_pro ul{
+
+ padding: 10px;   
+}
+#icons-pro p,#icons-pro i{
+    font-size: 25px;
+    margin-top: -10px;
+}
+#Project_title{
+    margin-bottom: 8vh;
+}
+
+
+
+@media only screen and (max-width:840px){
+    /* new portfoli */
+.project_box{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+.image_pro img{
+    width: 77%;
+}
+.content_pro p{
+width: 130%;
+}
+
+}
 @media only screen and (max-width:600px){
+/* above new portfolio */
     .layer h3{
         text-align: left;
         margin-bottom: 8px;
@@ -394,10 +474,11 @@ nav .fa-solid{
     }
     .header-text{
         text-align: center;
+        align-items: center;
     }
     .services-list{
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
         grid-gap: 12px;
         margin-top: 30px;
         
