@@ -1,4 +1,4 @@
-cd username.github.io echo "Hello World" > index.html
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +23,7 @@ cd username.github.io echo "Hello World" > index.html
             <li><a href="#header">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#services">SKILLS</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#portfolio">MY WORK</a></li>
             <li><a href="#Statistics">STATISTICS</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -248,8 +248,11 @@ cd username.github.io echo "Hello World" > index.html
                 <li>JavaScript</li>
               </ul>
               <div id="icons-pro" class="social-icons">
-                <a href="https://github.com/Sandeeprawat313"><p>Live</p> </a>
-                <a href="https://www.linkedin.com/in/sandeep-rawat-50a612159/"
+                <a href="https://shimmering-vacherin-7a95eb.netlify.app/"
+                  ><p>Live</p>
+                </a>
+                <a
+                  href="https://github.com/Sandeeprawat313/UNIT--2-group-project-"
                   ><i class="fa-brands fa-github"></i>
                 </a>
               </div>
@@ -273,7 +276,9 @@ cd username.github.io echo "Hello World" > index.html
                 <li>JavaScript</li>
               </ul>
               <div id="icons-pro" class="social-icons">
-                <a href="https://github.com/Sandeeprawat313"><p>Live</p> </a>
+                <a href="https://joyful-cuchufli-e00c03.netlify.app/"
+                  ><p>Live</p>
+                </a>
                 <a
                   href="https://github.com/Sandeeprawat313/future-rabbits-7964/tree/main"
                   ><i class="fa-brands fa-github"></i>
@@ -291,7 +296,7 @@ cd username.github.io echo "Hello World" > index.html
 
     <!-- Statistics section -->
     <div id="Statistics">
-      <h1 class="sub-title" id="Statis-id">STASTICALS</h1>
+      <h1 class="sub-title" id="Statis-id">STATISTICS</h1>
       <div id="Sta-sections" class="container">
         <div>
           <h3>1200+</h3>
@@ -372,6 +377,15 @@ cd username.github.io echo "Hello World" > index.html
         <!-- <p>copyright@ Sandeep ............</p> -->
       </div>
     </div>
+
+    <!-- backtotop -->
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="/images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
   </body>
 
   <script>
@@ -415,6 +429,30 @@ cd username.github.io echo "Hello World" > index.html
           form.reset();
         })
         .catch((error) => console.error("Error!", error.message));
+    });
+
+    // back to top
+    const backToTopButton = document.querySelector(".back-to-top");
+    let isBackToTopRendered = false;
+
+    let alterStyles = (isBackToTopRendered) => {
+      backToTopButton.style.visibility = isBackToTopRendered
+        ? "visible"
+        : "hidden";
+      backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
+      backToTopButton.style.transform = isBackToTopRendered
+        ? "scale(1)"
+        : "scale(0)";
+    };
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 700) {
+        isBackToTopRendered = true;
+        alterStyles(isBackToTopRendered);
+      } else {
+        isBackToTopRendered = false;
+        alterStyles(isBackToTopRendered);
+      }
     });
   </script>
 </html>
