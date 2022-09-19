@@ -25,10 +25,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .logo{
-    width: 140px;
+    width: 10px;
     font-size: 40px;
     color: #ff004f;
     text-decoration: none;
@@ -38,13 +38,14 @@ nav{
 nav ul li{
      display: inline-block;
      list-style: none;
-     margin: 10px 20px;
+     margin: 10px 10px;
+     
      
 }
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8vw;
     position: relative ;
 }
 nav ul li a::after{
@@ -71,7 +72,18 @@ nav ul li a:hover::after{
 }
 
 .header-text span{
-    color: #ff004f;
+    -webkit-text-stroke:0.5px #ff004f;
+    color: transparent;
+    background-image: linear-gradient(#ff004f,#ff004f);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -72vh 0;
+    animation:  backcolor 3s linear infinite alternate;
+}
+@keyframes  backcolor{
+    100%{
+        background-position:0 0;
+    }
 }
 
 
@@ -306,6 +318,7 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 30px;
+
 }
 .contact-left p i{
     color: #ff004f;
@@ -387,7 +400,7 @@ nav .fa-solid{
     margin-left: 25%;
     border-radius: 50%;
     padding: 15% 5%;
-    font-size: 3vh;
+    font-size: 100%; ;
     margin-bottom: 10px;
 }
 
@@ -460,6 +473,9 @@ nav .fa-solid{
 
 
 
+
+
+
 @media only screen and (max-width:840px){
     /* new portfoli */
 .project_box{
@@ -477,7 +493,23 @@ width: 130%;
 
 }
 @media only screen and (max-width:600px){
+/* // name text */
 /* above new portfolio */
+
+/* statistics */
+#Sta-sections div h3{
+    font-size: 100%;  
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative ;
+}
+.fa-bars{
+    color: #ff004f;
+}
     .layer h3{
         text-align: left;
         margin-bottom: 8px;
@@ -506,16 +538,21 @@ width: 130%;
     }
 
     #header{
-        background-image: url(/images/k2.jpg);
+        background-image: url(/images/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg);
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 25vh;
+        font-size: 15px;
     }
     .header-text h1{
         font-size: 30px;
         margin-top: 20px;
+        color: black;
     }
+    .header-text p{
+        color: black;
+    }
+
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -527,7 +564,7 @@ width: 130%;
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding: 50px;
+        padding: 40px 10px;
         z-index: 2;
         transition: right 0.5s;
     }
@@ -538,7 +575,7 @@ width: 130%;
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
-        left: 25px;
+        left: 10px;
 
     }
 
@@ -581,3 +618,29 @@ html{
     margin-top: -10px;
     display: block;
 }
+
+/* // back to top */
+.back-to-top {
+	position: fixed;
+	bottom: 4rem;
+	right: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3.5rem;
+	width: 3.5rem;
+	background-color: #ff004f;
+	border-radius: 50%;
+	z-index: 10;
+	visibility: hidden;
+	transition: all 0.4s;
+}
+
+.back-to-top:hover {
+	background-color: #ff005149;
+}
+
+.back-to-top__image {
+	height: 70%;
+}
+
