@@ -493,6 +493,15 @@ width: 130%;
 
 }
 @media only screen and (max-width:600px){
+/* back to top */
+.back-to-top {
+	position: fixed;
+	bottom: 4rem;
+	left: 1rem;
+    height: 2.5rem;
+	width: 2.5rem;
+
+}
 /* // name text */
 /* above new portfolio */
 
