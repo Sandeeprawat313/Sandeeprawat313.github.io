@@ -210,7 +210,7 @@ nav ul li a:hover::after{
 
 /* portfolio */
 #portfolio{
-    padding: 50px 0px;
+    margin-top: 50px;
 }
 .work-list{
     display: grid;
@@ -384,9 +384,9 @@ nav .fa-solid{
 #Sta-sections{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-    margin-bottom: 50px;
     margin-top: -20px;
     margin-bottom: 10%;
+    
 }
 #Sta-sections div{
     text-align: center;
@@ -648,6 +648,7 @@ html{
 #git-calander{
     padding: 0px 10%;
     margin-top: -50px;
+    margin-bottom: 100px;
 
 }
 #git-calander h3{
