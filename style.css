@@ -644,6 +644,16 @@ html{
 	height: 70%;
 }
 
+/* git calander */
+#git-calander{
+    padding: 0px 10%;
+    margin-top: -50px;
 
-
+}
+#git-calander h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
 
