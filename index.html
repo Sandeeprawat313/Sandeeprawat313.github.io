@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -94,72 +93,15 @@
                 </li>
               </ul>
             </div>
-            <!-- <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>JAVA3</span> <br />
-                  DEVELOPER
-                </li>
-                <li>
-                  <span>JAVA3</span> <br />
-                  DEVELOPER
-                </li>
-                <li>
-                  <span>JAVA3</span> <br />
-                  DEVELOPER
-                </li>
-                <li>
-                  <span>JAVA3</span> <br />
-                  DEVELOPER
-                </li>
-              </ul>
-            </div> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Services
+    <!-- Tech Stack -->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">My services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-              vitae animi aliquid dolor atque? Doloremque?
-            </p>
-            <a href="">Learn More</a>
-          </div>
-          <div>
-            <i class="fa-sharp fa-solid fa-crop"></i>
-            <h2>Web Design2</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-              vitae animi aliquid dolor atque? Doloremque?
-            </p>
-            <a href="">Learn More</a>
-          </div>
-
-          <div>
-            <i class="fa-brands fa-app-store-ios"></i>
-            <h2>Web Design3</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-              vitae animi aliquid dolor atque? Doloremque?
-            </p>
-            <a href="">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Skills -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">SKILLS</h1>
+        <h1 class="sub-title">Tech Stack</h1>
         <div class="services-list">
           <div>
             <img src="/images/svg/html.svg" alt="" />
@@ -201,34 +143,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Skills -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">SKILLS</h1>
+        <div class="services-list">
+          <div>
+            <img src="/images/Front.png" alt="" />
+            <h2>FrontEnd Development</h2>
+          </div>
+          <div>
+            <img src="/images/back.png" alt="" />
+            <h2>Backend Development</h2>
+          </div>
+          <div>
+            <img src="/images/DSA.jpg" alt="" />
+            <h2>Data Structures and Algorithm</h2>
+          </div>
+          <div>
+            <img src="/images/comm.jfif" alt="" />
+            <h2>Communication Skills</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Portfolio -->
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title" id="Project_title">MY PROJECTS</h1>
-        <!-- <h1 class="sub-title">MY WORK</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/lifestyle.png" alt="" />
-            <div class="layer">
-              <h1>Lifestyle_Clone</h1>
-              <h3>
-                Lifestyle is India's leading fashion destination for the latest
-                trends for multiple categories including men, women and kids'
-                apparel, footwear, handbags, fashion accessories and beauty and
-                many more.
-              </h3>
-              <div id="teck-stack">
-                <h3>HTML |</h3>
-                <h3>CSS |</h3>
-                <h3>JAVASCRIPT</h3>
-              </div>
-              <div id="project-link">
-                <a href="">Deployed link</a>
-                <a href="">Github link</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
 
         <!-- New projects============================================================================ -->
         <div id="project_section">
@@ -292,7 +236,6 @@
         </div>
       </div>
     </div>
-    <!-- <a href="#" class="btn">See More</a> -->
 
     <!-- Statistics section -->
     <div id="Statistics">
@@ -387,72 +330,5 @@
       />
     </a>
   </body>
-
-  <script>
-    let tablinks = document.getElementsByClassName("tab-links");
-    let tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabnames) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabnames).classList.add("active-tab");
-    }
-
-    let sidemenu = document.getElementById("sidemenu");
-    function openmenu() {
-      sidemenu.style.right = "0";
-    }
-    function closemenu() {
-      sidemenu.style.left = "-200px";
-    }
-  </script>
-  <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxetOTR4e0JmyhYzYL_Gbs2k7xzlw92hwvUqzKDZWwAP87ANj4kSzaxTHy1uyOQ6Albug/exec";
-    const form = document.forms["submit-to-google-sheet"];
-    const msg = document.getElementById("msg"); //
-
-    // for form from gethub
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => {
-          msg.innerHTML = "Message sent successfully";
-          setTimeout(function () {
-            msg.innerHTML = "";
-          }, 5000);
-          form.reset();
-        })
-        .catch((error) => console.error("Error!", error.message));
-    });
-
-    // back to top
-    const backToTopButton = document.querySelector(".back-to-top");
-    let isBackToTopRendered = false;
-
-    let alterStyles = (isBackToTopRendered) => {
-      backToTopButton.style.visibility = isBackToTopRendered
-        ? "visible"
-        : "hidden";
-      backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
-      backToTopButton.style.transform = isBackToTopRendered
-        ? "scale(1)"
-        : "scale(0)";
-    };
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 700) {
-        isBackToTopRendered = true;
-        alterStyles(isBackToTopRendered);
-      } else {
-        isBackToTopRendered = false;
-        alterStyles(isBackToTopRendered);
-      }
-    });
-  </script>
 </html>
+<script src="/script.js"></script>
