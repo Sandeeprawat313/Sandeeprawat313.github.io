@@ -502,6 +502,11 @@ width: 130%;
 	width: 2.5rem;
 
 }
+
+/* git calender */
+span.contrib-number{
+    font-size: 3.6vw;
+}
 /* // name text */
 /* above new portfolio */
 
