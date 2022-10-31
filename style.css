@@ -23,6 +23,7 @@ body{
 }
 .container{
     padding: 10px 5%;
+    /* border: 10px solid red; */
 }
 nav{
     display: flex;
@@ -468,7 +469,7 @@ nav .fa-solid{
 
 
 
-
+/* responsiveness */
 @media only screen and (max-width:840px){
     /* new portfoli */
 .project_box{
@@ -483,8 +484,9 @@ nav .fa-solid{
 .content_pro p{
 width: 130%;
 }
-
 }
+
+
 @media only screen and (max-width:600px){
 /* back to top */
 .back-to-top {
@@ -500,8 +502,6 @@ width: 130%;
 span.contrib-number{
     font-size: 3.6vw;
 }
-/* // name text */
-/* above new portfolio */
 
 /* statistics */
 #Sta-sections div h3{
@@ -626,6 +626,9 @@ html{
     display: block;
 }
 
+
+
+
 /* // back to top */
 .back-to-top {
 	position: fixed;
@@ -653,10 +656,8 @@ html{
 
 /* git calander */
 #git-calander{
-    padding: 0px 10%;
     margin-top: -50px;
     margin-bottom: 100px;
-
 }
 #git-calander h3{
     text-align: center;
