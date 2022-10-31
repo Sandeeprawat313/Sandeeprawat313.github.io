@@ -312,14 +312,14 @@ nav ul li a:hover::after{
     margin-bottom: 100px;
     display: flex;
     gap: 10px;
-    transition: background 0.5s,transform 0.5s;
+    transition: background 0.3s,transform 0.3s;
 }
 .project_box:hover{
-    background-color: rgba(30, 28, 28, 0.678);
+    background-color: rgba(42, 41, 41, 0.759);
     margin: 5px;
     margin-bottom: 14.5vh;
     border-radius: 10px;
-    transform: translateY(10px);
+    transform: translateY(1px);
 }
 
 .content_pro{
@@ -552,7 +552,7 @@ nav ul li a{
     }
 
     #header{
-        background-image: url(/images/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg);
+        background-image: url(/images/new_yoann-siloine-dyaxQ-aoGWY-unsplash.jpg);
     }
     .header-text{
         margin-top: 25vh;
