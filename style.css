@@ -9,6 +9,10 @@ body{
     color: white;
 
 }
+
+
+
+/* header */
 #header{
     width: 100%;
     height: 99vh;
@@ -18,14 +22,12 @@ body{
 
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 5%;
 }
-
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 .logo{
     width: 10px;
@@ -33,8 +35,6 @@ nav{
     color: #ff004f;
     text-decoration: none;
 }
-
-
 nav ul li{
      display: inline-block;
      list-style: none;
@@ -70,7 +70,6 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
 }
-
 .header-text span{
     -webkit-text-stroke:0.5px #ff004f;
     color: transparent;
@@ -85,6 +84,7 @@ nav ul li a:hover::after{
         background-position:0 0;
     }
 }
+
 
 
 /* about section */
@@ -141,7 +141,6 @@ nav ul li a:hover::after{
     list-style: none;
     margin: 10px 0;
 }
-
 .tab-contents ul li span{
     color: #ff004f;
     font-size: 14px;
@@ -156,6 +155,9 @@ nav ul li a:hover::after{
     text-align: justify;
     margin-top: 10px;
 }
+
+
+
 
 /* services */
 #services{
@@ -199,6 +201,8 @@ nav ul li a:hover::after{
     transform: translateY(10px);
 }
 
+
+
 /* Skill */
 .services-list img{
     width: 100%;
@@ -224,7 +228,6 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
 }
-
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -249,8 +252,6 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
-    
-
 }
 .layer h3{
     font-weight: 500;
@@ -258,8 +259,6 @@ nav ul li a:hover::after{
     text-align: justify;
     margin-top: 10px;
 }
-
-
 .work:hover img{
     transform: scale(1.1);
 }
@@ -307,9 +306,59 @@ nav ul li a:hover::after{
   font-weight: bold;  
   color: #262626;
 }
+/* NEW PORTFOLIO */
+.project_box{
+   
+    margin-bottom: 100px;
+    display: flex;
+    gap: 10px;
+}
+.content_pro{
+    padding: 2% 10px;
+    width: 80%;
+}
+.content_pro h1{
+    margin-bottom: 1vw;
+    text-decoration: underline;
+}
+.content_pro p{
+    margin-bottom: 1vw;
+    text-align: justify;
+    width: 100%;
+}
+
+.image_pro{
+    width: 130%; 
+}
+.image_pro img{
+    width: 100%;
+    transition: background 0.5s,transform 0.5s;
+}
+.image_pro img:hover{
+    border-radius: 10px;
+    border: 1px solid #ff004f;
+    transform: translateY(14px);
+}
+.links-project{
+    display: flex;
+    gap: 20px;
+}
+
+.content_pro ul{
+
+ padding: 10px;   
+}
+#icons-pro p,#icons-pro i{
+    font-size: 25px;
+    margin-top: -10px;
+}
+#Project_title{
+    margin-bottom: 8vh;
+}
+
+
 
 /* contact */
-
 .contact-left{
     flex-basis: 35%
 }
@@ -380,6 +429,9 @@ nav .fa-solid{
     display: none;
 }
 
+
+
+
 /* Statistical section */
 #Sta-sections{
     display: grid;
@@ -403,7 +455,6 @@ nav .fa-solid{
     font-size: 100%; ;
     margin-bottom: 10px;
 }
-
 #Sta-sections div p{
     margin-top: 10px;
 }
@@ -411,64 +462,6 @@ nav .fa-solid{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 50px;
-}
-
-
-/* NEW PORTFOLIO */
-#project_section{
-   
-}
-
-.project_box{
-   
-    margin-bottom: 100px;
-    display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(49%,1fr)); */
-    gap: 10px;
-
-}
-.content_pro{
-    padding: 2% 10px;
-    width: 80%;
-}
-.content_pro h1{
-    margin-bottom: 1vw;
-    text-decoration: underline;
-}
-.content_pro p{
-    margin-bottom: 1vw;
-    text-align: justify;
-    width: 100%;
-}
-
-.image_pro{
-    width: 130%; 
-}
-.image_pro img{
-    width: 100%;
-    transition: background 0.5s,transform 0.5s;
-}
-.image_pro img:hover{
-    border-radius: 10px;
-    border: 1px solid #ff004f;
-    transform: translateY(14px);
-}
-.links-project{
-    display: flex;
-    gap: 20px;
-}
-
-.content_pro ul{
-
- padding: 10px;   
-}
-#icons-pro p,#icons-pro i{
-    font-size: 25px;
-    margin-top: -10px;
-}
-#Project_title{
-    margin-bottom: 8vh;
 }
 
 
