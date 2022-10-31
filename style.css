@@ -309,11 +309,19 @@ nav ul li a:hover::after{
 }
 /* NEW PORTFOLIO */
 .project_box{
-   
     margin-bottom: 100px;
     display: flex;
     gap: 10px;
+    transition: background 0.5s,transform 0.5s;
 }
+.project_box:hover{
+    background-color: rgba(30, 28, 28, 0.678);
+    margin: 5px;
+    margin-bottom: 14.5vh;
+    border-radius: 10px;
+    transform: translateY(10px);
+}
+
 .content_pro{
     padding: 2% 10px;
     width: 80%;
@@ -337,7 +345,7 @@ nav ul li a:hover::after{
 }
 .image_pro img:hover{
     border-radius: 10px;
-    border: 1px solid #ff004f;
+    /* border: 1px solid #ff004f; */
     transform: translateY(14px);
 }
 .links-project{
@@ -351,7 +359,7 @@ nav ul li a:hover::after{
 }
 #icons-pro p,#icons-pro i{
     font-size: 25px;
-    margin-top: -10px;
+    /* margin-top: -10px; */
 }
 #Project_title{
     margin-bottom: 8vh;
@@ -376,7 +384,7 @@ nav ul li a:hover::after{
     font-size: 25px;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .social-icons a{
     text-decoration: none;
@@ -443,7 +451,7 @@ nav .fa-solid{
 }
 #Sta-sections div{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px ;
 
 }
 #Sta-sections div h3{
@@ -460,9 +468,8 @@ nav .fa-solid{
     margin-top: 10px;
 }
 #Statis-id{
-    width: 80%;
-    margin-left: 10%;
     margin-bottom: 50px;
+
 }
 
 
@@ -661,9 +668,39 @@ html{
 }
 #git-calander h3{
     text-align: center;
-    text-decoration: underline;
     margin-bottom: 20px;
     margin-top: 10vh;
-    font-size: 20px;
+    font-size: 30px;
 }
 
+/* git stat */
+#git-stat{
+    
+    margin-bottom: 100px;
+    display: flex;
+}
+#git-stat p{
+    width: 100%;
+}
+#git-stat img{
+    width: 100%;
+}
+#git-h{
+    margin-top: -50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1vh;
+    font-size: 30px;
+}
+
+/* tech stack for project */
+#tech_stackforpro{
+    width: 30%;
+    display: flex;
+    gap: 10px;
+}
+#tech_stackforpro img{
+    width: 33%;
+    margin-top: 10px;
+    margin-right: 10px;
+}

@@ -19,13 +19,15 @@
           <a class="logo" href="#header">S</a>
           <i class="fa-sharp fa-solid fa-sun-bright"></i>
           <ul id="sidemenu">
-            <li><a href="#header">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SKILLS</a></li>
-            <li><a href="#portfolio">MY WORK</a></li>
-            <li><a href="#Statistics">STATISTICS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#contact">RESUME</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#Statistics">Statistics</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="/images/Sandeep_Rawat_Resume.pdf" download>Resume</a>
+            </li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -49,7 +51,7 @@
             <img src="/images/image.JPG" alt="" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">ABOUT ME</h1>
+            <h1 class="sub-title">About Me</h1>
             <p>
               Aspiring Java Developer having a deep interest in backend
               development, looking for a job to enhance the current skill set
@@ -93,6 +95,31 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+          <div>
+            <img src="/images/Front.png" alt="" />
+            <h2>FrontEnd Development</h2>
+          </div>
+          <div>
+            <img src="/images/back.png" alt="" />
+            <h2>Backend Development</h2>
+          </div>
+          <div>
+            <img src="/images/DSA.jpg" alt="" />
+            <h2>Data Structures and Algorithm</h2>
+          </div>
+          <div>
+            <img src="/images/comm.jfif" alt="" />
+            <h2>Communication Skills</h2>
           </div>
         </div>
       </div>
@@ -144,35 +171,10 @@
       </div>
     </div>
 
-    <!-- Skills -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">SKILLS</h1>
-        <div class="services-list">
-          <div>
-            <img src="/images/Front.png" alt="" />
-            <h2>FrontEnd Development</h2>
-          </div>
-          <div>
-            <img src="/images/back.png" alt="" />
-            <h2>Backend Development</h2>
-          </div>
-          <div>
-            <img src="/images/DSA.jpg" alt="" />
-            <h2>Data Structures and Algorithm</h2>
-          </div>
-          <div>
-            <img src="/images/comm.jfif" alt="" />
-            <h2>Communication Skills</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Portfolio -->
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title" id="Project_title">MY PROJECTS</h1>
+        <h1 class="sub-title" id="Project_title">My Projects</h1>
 
         <!-- New projects============================================================================ -->
         <div id="project_section">
@@ -186,17 +188,29 @@
                 apparel, footwear, handbags, fashion accessories and beauty and
                 many more.
               </p>
-              <ul>
+              <!-- <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-              </ul>
+              </ul> -->
+              <div id="tech_stackforpro" class="image_pro">
+                <img src="/images/svg/html.svg" alt="" />
+                <img src="/images/svg/css.svg" alt="" />
+                <img
+                  src="/images/svg/javascript-logo-8892AEFCAC-seeklogo.com.png"
+                  alt=""
+                />
+              </div>
+
               <div id="icons-pro" class="social-icons">
-                <a href="https://shimmering-vacherin-7a95eb.netlify.app/"
+                <a
+                  href="https://shimmering-vacherin-7a95eb.netlify.app/"
+                  target="_blank"
                   ><p>Live</p>
                 </a>
                 <a
                   href="https://github.com/Sandeeprawat313/UNIT--2-group-project-"
+                  target="_blank"
                   ><i class="fa-brands fa-github"></i>
                 </a>
               </div>
@@ -214,17 +228,23 @@
                 Fiverr’s platform connects freelancers to people or businesses
                 looking to hire..
               </p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
+              <div id="tech_stackforpro" class="image_pro">
+                <img src="/images/svg/html.svg" alt="" />
+                <img src="/images/svg/css.svg" alt="" />
+                <img
+                  src="/images/svg/javascript-logo-8892AEFCAC-seeklogo.com.png"
+                  alt=""
+                />
+              </div>
               <div id="icons-pro" class="social-icons">
-                <a href="https://joyful-cuchufli-e00c03.netlify.app/"
+                <a
+                  href="https://joyful-cuchufli-e00c03.netlify.app/"
+                  target="_blank"
                   ><p>Live</p>
                 </a>
                 <a
                   href="https://github.com/Sandeeprawat313/future-rabbits-7964/tree/main"
+                  target="_blank"
                   ><i class="fa-brands fa-github"></i>
                 </a>
               </div>
@@ -238,47 +258,73 @@
     </div>
 
     <!-- Statistics section -->
+
     <div id="Statistics">
-      <h1 class="sub-title" id="Statis-id">STATISTICS</h1>
-      <div id="Sta-sections" class="container">
-        <div>
-          <h3>1200+</h3>
-          <h2>Hours</h2>
-          <p>
-            of Full Stack <br />
-            Coding
-          </p>
+      <div class="container">
+        <h1 class="sub-title" id="Statis-id">Statistics</h1>
+        <div id="Sta-sections">
+          <div>
+            <h3>1200+</h3>
+            <h2>Hours</h2>
+            <p>
+              of Full Stack <br />
+              Coding
+            </p>
+          </div>
+          <div>
+            <h3 style="border: 10px solid #ff004f">250+</h3>
+            <h2>DSA</h2>
+            <p>Problems</p>
+          </div>
+          <div>
+            <h3>210+</h3>
+            <h2>Git</h2>
+            <p>Commits</p>
+          </div>
+          <div>
+            <h3 style="border: 10px solid #ff004f">10+</h3>
+            <h2>Projects</h2>
+            <p>Done</p>
+          </div>
+          <div>
+            <h3>100+</h3>
+            <h2>Hours</h2>
+            <p>
+              of Soft Skills <br />
+              Sessions
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 style="border: 10px solid #ff004f">250+</h3>
-          <h2>DSA</h2>
-          <p>Problems</p>
-        </div>
-        <div>
-          <h3>210+</h3>
-          <h2>Git</h2>
-          <p>Commits</p>
-        </div>
-        <div>
-          <h3 style="border: 10px solid #ff004f">10+</h3>
-          <h2>Projects</h2>
-          <p>Done</p>
-        </div>
-        <div>
-          <h3>100+</h3>
-          <h2>Hours</h2>
-          <p>
-            of Soft Skills <br />
-            Sessions
-          </p>
-        </div>
+      </div>
+    </div>
+
+    <!-- github-Stat -->
+
+    <div class="container">
+      <h3 id="git-h">📊 My Github Statistics</h3>
+      <div id="git-stat">
+        <p>
+          <img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=sandeeprawat313&show_icons=true&locale=en&layout=compact"
+            alt="sandeeprawat313"
+          />
+        </p>
+
+        <p>
+          &nbsp;<img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api?username=sandeeprawat313&show_icons=true&locale=en"
+            alt="sandeeprawat313"
+          />
+        </p>
       </div>
     </div>
 
     <!-- github-Calander -->
     <div class="container">
       <div id="git-calander">
-        <h3>MY CONTRIBUTIONS</h3>
+        <h3>My Github Calendar</h3>
         <link
           rel="stylesheet"
           href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
@@ -287,13 +333,12 @@
       </div>
     </div>
 
-
     <!-- contact us -->
     <div id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">CONTACT ME</h1>
+            <h1 class="sub-title">Contact Me</h1>
             <p><i class="fas fa-paper-plane"></i>Sandeeprawat313@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>+91 - 7703986817</p>
             <div class="social-icons">
