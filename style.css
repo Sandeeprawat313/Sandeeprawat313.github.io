@@ -116,7 +116,7 @@ nav ul li a:hover::after{
 }
 .tab-titels{
     display: flex;
-    margin: 20px 0px 40px;
+    margin: 10px 0px 20px;
 }
 .tab-links{
     margin-right: 50px;
@@ -140,7 +140,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 .tab-contents ul li span{
     color: #ff004f;
@@ -157,7 +157,24 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 
+.About-Me-Resume{
+    display: block;
+    margin-top: 10px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    background-color: #ff004f;
 
+}
+
+.About-Me-Resume:hover{
+    background: #ff004f;
+    color: white;
+}
 
 
 /* services */
@@ -323,6 +340,7 @@ nav ul li a:hover::after{
 }
 
 .content_pro{
+    /* border: 10pc solid red; */
     padding: 2% 10px;
     width: 80%;
 }
@@ -363,6 +381,11 @@ nav ul li a:hover::after{
 }
 #Project_title{
     margin-bottom: 8vh;
+}
+
+.project_tech_and_Tools{
+    margin-top: 20px;
+    color: rgb(197, 178, 178);
 }
 
 
